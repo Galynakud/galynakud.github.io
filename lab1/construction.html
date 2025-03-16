@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Будівництво - Симулятор міста</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header>
+        <h1><em>Симулятор управління містом</em></h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><em><a href="index.html">Головна</a></em></li>
+                <li><em><a href="construction.html">Будівництво</a></em></li>
+                <li><em><a href="resources.html">Ресурси міста</a></em></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <section id="construction" class="info-section city-style">
+            <div class="icon">🏗️</div>
+            <div class="text-content">
+                <h2>Будівництво</h2>
+                <p>Розширюйте місто, додавайте нові об'єкти та керуйте будівельними ресурсами.</p>
+            </div>
+        </section>
+
+        <section class="object-types">
+            <h3>Типи об'єктів</h3>
+            <div class="types-list">
+                <div class="type-item">
+                    <span class="type-icon">🏠</span>
+                    <h4>Будинок</h4>
+                    <p>Будівництво житлових будинків для розширення міста, розміщення жителів та їх потреб.</p>
+                </div>
+                <div class="type-item">
+                    <span class="type-icon">🏭</span>
+                    <h4>Фабрика</h4>
+                    <p>Промислові об'єкти для виробництва товарів. Важливі для економіки міста та забезпечення робочими місцями.</p>
+                </div>
+                <div class="type-item">
+                    <span class="type-icon">🏨</span>
+                    <h4>Готель</h4>
+                    <p>Об'єкти для розміщення туристів та бізнес-лідерів.</p>
+                </div>
+                <div class="type-item">
+                    <span class="type-icon">🛣️</span>
+                    <h4>Дорога</h4>
+                    <p>Будівництво транспортних шляхів для зв'язку між різними частинами міста.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="resources-tips">
+            <h3>Ресурси для будівництва</h3>
+            <p>Ось кілька основних матеріалів, які використовуються при будівництві різних типів об'єктів.</p>
+            <div class="tips-list">
+                <div class="tip-item">
+                    <span class="tip-icon">🧱</span>
+                    <h4>Цегла</h4>
+                    <p>Цегла є основним матеріалом для стінових конструкцій.</p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">🪵</span>
+                    <h4>Дерево</h4>
+                    <p>Дерево використовується для будівництва каркасів, даху та декоративних елементів.</p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">🪨</span>
+                    <h4>Сталь</h4>
+                    <p>Сталь потрібна для зміцнення конструкцій, особливо для фабрик та висотних будівель. Вона має високу міцність і стійкість до навантажень.</p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">👷‍♂️</span>
+                    <h4>Будівельники</h4>
+                    <p>Будівельники — це спеціалісти, які відповідають за виконання всіх етапів будівництва, від підготовки майданчика до здачі готового об'єкта.</p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="construction-controls">
+            <h3>Опції будівництва</h3>
+            <form id="construction-form">
+                <label for="object-type">Тип об'єкта:</label>
+                <select id="object-type">
+                    <option value="building">Будинок 🏠</option>
+                    <option value="factory">Фабрика 🏭</option>
+                    <option value="hotel">Готель 🏨</option>
+                    <option value="road">Дорога 🛣️</option>
+                </select>
+                
+                <label for="materials">Потрібні матеріали:</label>
+                <input type="text" id="materials" placeholder="Наприклад: 100 цегли, 50 дерева">
+
+                <label for="materials-volume">Об’єм матеріалів (м³):</label>
+                <input type="number" id="materials-volume" min="1" placeholder="Введіть об’єм">
+                
+                <label for="workers">Кількість будівельників:</label>
+                <input type="number" id="workers" min="1" max="100" value="5">
+                
+                <div class="button-container">
+                    <a href="resources.html" class="btn2">Додати об'єкт</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Контактна інформація:</strong></p>
+            <p>📞 Телефон: <a href="tel:+380684292967">+380 (68) 429 29 67</a></p>
+            <p>✉️ Електронна пошта: <a href="mailto:galynakud121@gmail.com">galynakud121@gmail.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

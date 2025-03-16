@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресурси міста - Симулятор міста</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header>
+        <h1><em>Симулятор управління містом</em></h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><em><a href="index.html">Головна</a></em></li>
+                <li><em><a href="construction.html">Будівництво</a></em></li>
+                <li><em><a href="resources.html">Ресурси міста</a></em></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <section id="resources" class="info-section city-style">
+            <div class="icon">💰</div>
+            <div class="text-content">
+                <h2>Ресурси міста</h2>
+                <p>Ось поточний бюджет міста, наявні матеріали та їх об’єм, а також кількість будівельників.</p>
+            </div>
+        </section>
+        <section class="resources-tips">
+            <h3>Поради з ефективного використання ресурсів</h3>
+            <div class="tips-list">
+
+                <div class="tip-item">
+                    <span class="tip-icon">💡</span>
+                    <p><strong>Оновлюйте технології</strong>, щоб зменшити витрати на будівництво. Інвестуйте в інновації для скорочення використання ресурсів та збільшення ефективності.</p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">🏗️</span>
+                    <p><strong>Вкладайте більше ресурсів у будівельників</strong> для прискорення роботи. Більше робітників дозволить завершити будівництво швидше, але важливо не перевантажувати їх.</p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">💰</span>
+                    <p><strong>Оптимізуйте бюджет</strong> для важливих проєктів, таких як інфраструктура. Пам'ятайте, що витрати повинні бути збалансовані з доходами міста.</p>
+                </div>
+                <div class="tip-item">
+                    <span class="tip-icon">🧱</span>
+                    <p><strong>Контролюйте запаси матеріалів</strong>, щоб уникнути дефіциту. Регулярно перевіряйте рівень ресурсів і плануйте закупівлі для великого будівництва.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="resources-info">
+            <h3>Поточні ресурси</h3>
+            <div class="resources-list">
+                <div class="resource-item">
+                    <h4>Бюджет міста:</h4>
+                    <p>💲10,000,000</p>
+                    <!-- Прогрес-бар для бюджету -->
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+                <div class="resource-item">
+                    <h4>Матеріали:</h4>
+                    <ul>
+                        <li>🧱 Цегла: 20000 м³</li>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;">65%</div>
+                        </div>
+                        <li>🪵 Дерево: 10000 м³</li>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;">60%</div>
+                        </div>
+                        <li>🪨 Сталь: 50000 м³</li>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;">80%</div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="resource-item">
+                    <h4>Кількість будівельників:</h4>
+                    <p>👷‍♂️ 550 осіб</p>
+                    <!-- Прогрес-бар для будівельників -->
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;">50%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="btn2" id="buildButton">Побудувати об'єкт</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Контактна інформація:</strong></p>
+            <p>📞 Телефон: <a href="tel:+380684292967">+380 (68) 429 29 67</a></p>
+            <p>✉️ Електронна пошта: <a href="mailto:galynakud121@gmail.com">galynakud121@gmail.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

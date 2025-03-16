@@ -1,0 +1,500 @@
+/* Основні стилі */
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #e3f2fd, #97cdf9);
+    margin: 0;
+    padding: 0;
+}
+
+     /* хедер */
+header {
+    background: linear-gradient(135deg, #00796b, #004d40);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #00bfa5;
+    }
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+
+    .city-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 100px);
+        gap: 8px;
+        margin: 20px auto;
+        padding: 15px;
+        background: #e0e0e0;
+        width: fit-content;
+        border-radius: 12px;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+        
+    }
+
+    .city-style {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #4cc5b7, #004d40);
+        color: rgb(29, 27, 27);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+        max-width: 700px;
+        text-align: left;
+    }
+    
+
+.city-grid div {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    border-radius: 10px;
+}
+
+.building {
+    background: #c48e73;
+    border: 3px solid #a5284f;
+}
+
+.factory {
+    background: #4e4c4c;
+    border: 3px solid #9d828a;
+}
+
+.road {
+    background: #b2b1b1;
+    border: 2px dashed #4e4e4e;
+}
+
+.park {
+    background: #7dcc7d;
+    border: 2px solid #468d46;
+}
+
+
+.info-section {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: left;
+}
+
+.alt-style {
+    background: linear-gradient(135deg, #00796b, #004d40);
+    color: white;
+}
+
+/* Форма будівництва */
+.construction-controls {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.construction-controls h3 {
+    text-align: center;
+    color: #00796b;
+}
+
+.construction-controls label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.construction-controls input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.construction-controls .btn {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.town {
+    font-size: 3rem;
+    margin-right: 20px; 
+}
+.icon {
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+.text-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: white;
+    color: #00796b;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background: #00bfa5;
+    color: white;
+}
+
+.btn2 {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: white;
+    color: #00796b;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn2:hover {
+    background: #00bfa5;
+    color: white;
+}
+
+.button-container {
+    text-align: center; /* Вирівнює кнопку по центру */
+    margin-top: 20px; /* Додає відступ зверху */
+}
+.confirmation-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Секція ресурсів міста */
+.resources-info {
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.resources-info h3 {
+    text-align: center;
+    color: #00796b;
+}
+
+.resources-list {
+    margin-top: 20px;
+}
+
+.resource-item h4 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.resource-item p, .resource-item ul {
+    font-size: 1.1rem;
+    margin-left: 20px;
+}
+
+.resource-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resource-item li {
+    margin-bottom: 5px;
+}
+
+h3 {
+    text-align: center;
+    color: #00796b;
+}
+
+h4 {
+    color: #00796b;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Додавання стилів для прогрес-барів */
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 25px;
+    margin-top: 10px;
+}
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    border-radius: 10px;
+}
+
+/* Додавання анімацій для ресурсів */
+.resource-item {
+    transition: transform 0.3s ease;
+}
+
+.resource-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Візуальні ефекти на секціях */
+.resources-info, .info-section {
+    transition: background-color 0.3s ease;
+}
+
+.resources-info:hover, .info-section:hover {
+    background-color: #f1f1f1;
+}
+
+.resources-tips {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.resources-tips h3 {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resources-tips p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.tips-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tip-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+.tip-item .tip-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.tip-item p {
+    margin: 5px 0;
+}
+
+.tip-item strong {
+    color: #3c763d;
+}
+
+
+.object-types {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.object-types h3 {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.types-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.type-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+.type-item .type-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.type-item h4 {
+    font-size: 1.4rem;
+    color: #3c763d;
+    margin-bottom: 10px;
+}
+
+.type-item p {
+    margin: 5px 0;
+}
+
+
+.building-materials {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.building-materials h3 {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .city-grid {
+        grid-template-columns: repeat(3, 100px); 
+    }
+    .info-section {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .text-content h2 {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 1rem;
+    }
+    .city-grid {
+        grid-template-columns: repeat(3, 100px);
+        gap: 5px;
+    }
+    .text-content h2 {
+        font-size: 1.4rem;
+    }
+    .text-content p {
+        font-size: 1rem;
+    }
+    img, .town, .icon {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+footer {
+    background: linear-gradient(135deg, #004d40, #00251a);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid #00bfa5;
+}
+
+    .contact-info p {
+        margin: 5px 0;
+    }
+
+    .contact-info a {
+        color: #80deea;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+        color: #00bfa5;
+        text-decoration: underline;
+    }
